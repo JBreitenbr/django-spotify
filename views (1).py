@@ -7,11 +7,11 @@ from spotipy.oauth2 import SpotifyOAuth, SpotifyClientCredentials
 from django.http import HttpResponse, JsonResponse, HttpResponseRedirect
 
 #import credentials
-client_ID='12308f6c7b9c4194a6ca9e06f43d3bfd'       # Fill in with the value from the Spotify Developer Dashboard
-client_SECRET='e27a673a043147df8bf4a5d0a9fe8084'   # Fill in with the value from the Spotify Developer Dashboard
+client_ID=''       # Fill in with the value from the Spotify Developer Dashboard
+client_SECRET=''   # Fill in with the value from the Spotify Developer Dashboard
 redirect_URI="https://juliascodingeckle.pythonanywhere.com/spoti/callback"  # Fill in with the port you want to use -- MUST be one of the
                                                                    # redirect urls as in Spotify Developer Dashboard
-#username='31nfsp7vapk4zh24xzvw3lkavx5e'        # Fill in with Spotify username you want to use
+#username=''        # Fill in with Spotify username you want to use
 scope = "user-read-private playlist-read-private playlist-modify-public user-top-read"  # Set the scope(s)
 from django.shortcuts import render
 import spotipy
